@@ -6,7 +6,7 @@ tinderUser.name = "Piyush"
 tinderUser.isLoggedIn = false
 
 // console.log(tinderUser);
-console.log(tinderUser1);
+// console.log(tinderUser1);
 
 // Nested Object
 const regularUser = {
@@ -19,7 +19,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname.userfullname.firstname);
+// console.log(regularUser.fullname.userfullname.firstname);
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -27,8 +27,20 @@ const obj2 = {3: "a", 4: "b"}
 // const obj3 = { obj1, obj2}
 // const obj3 = Object.assign(obj1,obj2)
 const obj3 = { ...obj1, ...obj2}// spread operator
-console.log(obj3);
+// console.log(obj3);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+// de - structure
+const course = {
+    courseName: "Js in hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+const {courseInstructor: instructor} = course //destructuring {}
+console.log(courseInstructor);
+console.log(instructor);
+
