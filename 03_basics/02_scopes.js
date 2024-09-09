@@ -7,10 +7,21 @@ if(true){
     let a = 10;
     const b = 20;
     var c = 30;
-    console.log("Inner :" , a);//10
+    // console.log("Inner :" , a);//10
     
 }
 
 // console.log(a);//error oif loop me hai
 // console.log(b);//error if loop me hai 
-console.log(c);// 30 output jb ki nahi aana chahiye yhi hai block scope
+// console.log(c);// 30 output jb ki nahi aana chahiye yhi hai block scope
+
+function one(){
+    const username = "piyush"
+    function two(){
+        const website = "youtube"
+        console.log(username);
+    }
+    // console.log(website);
+    two()
+}
+one()
