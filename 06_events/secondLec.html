@@ -8,8 +8,31 @@
 <body>
     <h1>Javascript</h1>
     <button id="stop">Stop</button>
+
 </body>
 <script>
+    //Dono same hai
+    //setTimeout(function(){
+    //    console.log("Piyush");
+    //},2000)//2sec ke baad print hoga
+
+    const saypiyush = function(){
+        console.log("Piyush");
+    }
+    //setTimeout(saypiyush,2000);
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best js videos by chai and code"
+    }
+   //setTimeout(changeText,5000);// 5 sec ke baad piyush se change krke best js kr dega
+
+    const changeMe = setTimeout(changeText,2000);
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe);
+        console.log("STOPPED")
+    })
+
 
 </script>
 </html>
